@@ -1,0 +1,80 @@
+.innerTopic {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.topicLink {
+  text-decoration: none;
+}
+
+.topicTitles {
+  font-weight: 500;
+  width: 700px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 50px;
+  border: 2px solid #ccc;
+}
+
+.topicTitles:hover {
+  transform: scale(1.05);
+  color: black;
+  transition: 0.7s;
+  background-color: orange;
+  border-color: #999;
+}
+
+.topicCard {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.mainLinks{
+    text-decoration: none;
+}
+
+.mainTopics{
+    width: 300px;
+    border-radius: 27px;
+    padding: 20px 10px 20px 10px;
+    border: 2px solid #ccc;
+    font-weight: 700;
+}
+
+.mainTopics:hover{
+    transform: scale(1.05);
+    color: black;
+    transition: 0.7s;
+    background-color: orange;
+    border-color: #999;
+}
+
+.linkToBase, .linkToBook{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    width: 300px;
+    color: rgb(168, 168, 168);
+    font-size: 50px;
+}
+
+.baseBook p{
+    padding-top: 34px;
+    padding-right: 20px;
+}
+
+.baseBook{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.baseBook img{
+    padding: 5px;
+    border-radius: 20%;
+    width: 100px;
+}
