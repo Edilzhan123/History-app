@@ -12,14 +12,15 @@ function Topic() {
   return (
     <div>
       <h1>{period.title}</h1>
-
-      {period.topics.map((t) => (
-        <div key={t.id} class="innerTopic">
-          <Link class="topicLink" to={`/topic/${periodId}/${t.id}`}>
-            <p class="topicTitles">{t.title}</p>
-          </Link>
-        </div>
-      ))}
+      <div className="greed">
+        {period.topics.map((t) => (
+          <div key={t.id} class="innerTopic">
+            <Link class="topicLink" to={`/topic/${periodId}/${t.id}`}>
+              <p class="topicTitles">{t.title}</p>
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
