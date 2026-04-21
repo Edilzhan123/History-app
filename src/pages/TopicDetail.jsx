@@ -6,13 +6,29 @@ function TopicDetail() {
 
   const period = periods.find((p) => p.id === Number(periodId));
   const topic = period?.topics.find((t) => t.id === Number(topicId));
-
   if (!topic) return <h1>Тема не найдена</h1>;
 
   return (
-    <div>
-      <h1>{topic.title}</h1>
-      <p>{topic.content}</p>
+    <div className="topicPage">
+      <p className="cardTitle">{topic.title}</p>
+      <div className="table">
+        {topic.content &&
+          topic.content.map((block, index) => (
+            <div key={index} className="row">
+              <div className="left">{block.left}</div>
+
+              <div className="right">
+                {block.right.map((item, i) => (
+                  <div
+                    key={i}
+                    className="rightItem"
+                    dangerouslySetInnerHTML={{ __html: item }}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+      </div>
 
       <div className="baseBook">
         {topic.pdfBase && (
