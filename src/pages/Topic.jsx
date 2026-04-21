@@ -11,7 +11,7 @@ function Topic() {
 
   return (
     <div>
-      <h1>{period.title}</h1>
+      <h1 className="topicTitle">{period.title}</h1>
       <div className="greed">
         {period.topics.map((t) => (
           <div key={t.id} className="innerTopic">

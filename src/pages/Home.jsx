@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <div className="mainPage">
-      <h1 className="page-title">Тарих</h1>
+      <h1 className="pageTitle">Тарих</h1>
       {periods.map((period) => (
         <TopicCard key={period.id} topic={period} />
       ))}
